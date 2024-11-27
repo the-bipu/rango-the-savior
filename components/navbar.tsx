@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { BsGithub } from "react-icons/bs";
 import { ModeToggle } from "./mode-toggle";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export default function Navbar({ theme }: any) {
   return (
@@ -18,7 +18,7 @@ export default function Navbar({ theme }: any) {
       </Link>
       <div className="items-center hidden gap-2 md:flex">
         <ModeToggle />
-        <Link href="https://github.com/the-bipu/">
+        <Link href="https://github.com/the-bipu/rango-the-savior">
           <Button
             variant={theme === 'light' ? 'default' : 'outline'}
             className="items-center hidden gap-2 rounded-full w-fit md:flex h-9 px-5"
@@ -26,7 +26,7 @@ export default function Navbar({ theme }: any) {
           >
             <span>Github Repo</span>
             <span className="text-xl">
-              <BsGithub />
+              <GitHubLogoIcon className="w-5 h-5" />
             </span>
           </Button>
         </Link>
