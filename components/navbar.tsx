@@ -6,7 +6,7 @@ import { ModeToggle } from "./mode-toggle";
 
 export default function Navbar({ theme }: any) {
   return (
-    <div className="fixed z-50 flex items-center justify-between w-full h-24 px-4 py-10 backdrop-blur-md bg-transparent md:px-8 lg:px-12 xl:px-16 2xl:px-24">
+    <div className="fixed z-50 flex items-center justify-between w-full h-24 px-4 py-10 bg-transparent md:px-8 lg:px-12 xl:px-16 2xl:px-24">
       <Link href="/">
         <Image
           alt="logo"
