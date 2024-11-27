@@ -7,9 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "FileFlex",
-    description: `FileFlex – your go-to online tool for unlimited and free
-    multimedia conversion`,
+    title: "Rango",
+    description: `Rango – The Savior;`,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -11,7 +11,7 @@ export default function Navbar({}): any {
         <Image
           alt="logo"
           className="mb-2 cursor-pointer w-35 dark:invert"
-          src="/images/logo.svg"
+          src="/images/rango-logo.svg"
           height={100}
           width={170}
         />
