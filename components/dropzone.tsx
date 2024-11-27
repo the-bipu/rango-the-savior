@@ -5,7 +5,7 @@ import { MdClose } from "react-icons/md";
 import ReactDropzone from "react-dropzone";
 import bytesToSize from "@/utils/bytes-to-size";
 import fileToIcon from "@/utils/file-to-icon";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import compressFileName from "@/utils/compress-file-name";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -27,6 +27,7 @@ import { Button } from "./ui/button";
 import loadFfmpeg from "@/utils/load-ffmpeg";
 import type { Action } from "@/types";
 import { FFmpeg } from "@ffmpeg/ffmpeg";
+import { UserContext } from "@/context/userContext";
 
 const extensions = {
   image: [
@@ -66,6 +67,8 @@ const extensions = {
 
 export default function Dropzone() {
   const { toast } = useToast();
+  const { theme } = useContext(UserContext);
+
   const [is_hover, setIsHover] = useState<boolean>(false);
   const [actions, setActions] = useState<Action[]>([]);
   const [is_ready, setIsReady] = useState<boolean>(false);
@@ -429,10 +432,10 @@ export default function Dropzone() {
       {({ getRootProps, getInputProps }) => (
         <div
           {...getRootProps()}
-          className="flex items-center justify-center border-2 border-dashed shadow-sm cursor-pointer bg-background h-72 lg:h-80 xl:h-96 rounded-3xl border-secondary"
+          className={`flex items-center justify-center border-2 border-dashed shadow-sm cursor-pointer h-72 lg:h-80 xl:h-96 rounded-3xl border-secondary  ${theme === 'light' ? 'bg-white text-[#1a1a1a]' : 'bg-[#1a1a1a] text-white'}`}
         >
           <input {...getInputProps()} />
-          <div className="space-y-4 text-foreground">
+          <div className="space-y-4">
             {is_hover ? (
               <>
                 <div className="flex justify-center text-6xl">

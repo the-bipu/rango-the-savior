@@ -1,17 +1,16 @@
 "use client";
-
 import * as React from "react";
-import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
 import { MoonIcon, SunIcon } from "lucide-react";
+import { UserContext } from "@/context/userContext";
 
 export function ModeToggle() {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = React.useContext(UserContext);
 
   return (
     <Button
-      variant={"default"}
+      variant={theme === 'light' ? 'default' : 'outline'}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className="rounded-full px-2"
     >

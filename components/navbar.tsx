@@ -4,9 +4,9 @@ import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 import { ModeToggle } from "./mode-toggle";
 
-export default function Navbar({}): any {
+export default function Navbar({ theme }: any) {
   return (
-    <div className="fixed z-50 flex items-center justify-between w-full h-24 px-4 py-10 backdrop-blur-md bg-background bg-opacity-30 md:px-8 lg:px-12 xl:px-16 2xl:px-24">
+    <div className="fixed z-50 flex items-center justify-between w-full h-24 px-4 py-10 backdrop-blur-md bg-transparent md:px-8 lg:px-12 xl:px-16 2xl:px-24">
       <Link href="/">
         <Image
           alt="logo"
@@ -20,8 +20,8 @@ export default function Navbar({}): any {
         <ModeToggle />
         <Link href="https://github.com/the-bipu/">
           <Button
-            variant="default"
-            className="items-center hidden gap-2 rounded-full bg-primary w-fit md:flex h-9 px-5"
+            variant={theme === 'light' ? 'default' : 'outline'}
+            className="items-center hidden gap-2 rounded-full w-fit md:flex h-9 px-5"
             size="lg"
           >
             <span>Github Repo</span>
