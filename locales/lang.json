@@ -1,0 +1,22 @@
+{
+    "english": {
+        "header": "Rango - The Savior is Here",
+        "body": "Hey, it's me Rango – the chameleon! I have a part-time job, and it's not just any job. It's something extraordinary... Well, alright, it's a file converter, but I'm still a chameleon at heart! That was quite the intro, wasn’t it? Anyway, get back to your work now. I’ll be here doing my thing!"
+    },
+    "spanish": {
+        "header": "Rango - El Salvador está Aquí",
+        "body": "¡Hola, soy Rango, el camaleón! Tengo un trabajo a tiempo parcial, y no es cualquier trabajo. Es algo extraordinario... Bueno, está bien, es un convertidor de archivos, pero ¡sigo siendo un camaleón de corazón! Vaya introducción, ¿verdad? En fin, vuelve a tu trabajo ahora. ¡Yo estaré aquí haciendo lo mío!"
+    },
+    "french": {
+        "header": "Rango - Le Sauveur est Là",
+        "body": "Salut, c'est moi Rango – le caméléon ! J'ai un travail à temps partiel, et ce n'est pas un travail ordinaire. C'est quelque chose d'extraordinaire... Bon, d'accord, c'est un convertisseur de fichiers, mais je reste un caméléon dans l'âme ! Sacrée introduction, n'est-ce pas ? Allez, retourne à ton travail maintenant. Moi, je reste ici à faire mon truc !"
+    },
+    "hindi": {
+        "header": "रेंगो - उद्धारकर्ता यहाँ है",
+        "body": "नमस्ते, मैं हूँ रेंगो – गिरगिट! मेरे पास एक पार्ट-टाइम जॉब है, और यह कोई साधारण काम नहीं है। यह कुछ खास है... अच्छा, ठीक है, यह एक फाइल कन्वर्टर है, लेकिन मैं अब भी दिल से एक गिरगिट हूँ! क्या शानदार परिचय था, है ना? खैर, अब अपने काम पर लौट जाओ। मैं यहाँ अपना काम करता रहूँगा!"
+    },
+    "bhojpuri": {
+        "header": "रंगो - बचावे वाला अइल बा",
+        "body": "नमस्कार, हम हईं रंगो – गिरगिट! हमार एगो पार्ट-टाइम काम बा, आ ई कौनो साधारण काम ना ह। ई कुछ खास बा... ठीक बा, ई एगो फाइल कनवर्टर ह, लेकिन हम अबहियो दिल से एगो गिरगिट ही हईं! कइसन दमदार परिचय रहल ना? खैर, अब तहार काम पर लवट जा। हम इहाँ आपन काम करत रहीं।"
+    }
+}
